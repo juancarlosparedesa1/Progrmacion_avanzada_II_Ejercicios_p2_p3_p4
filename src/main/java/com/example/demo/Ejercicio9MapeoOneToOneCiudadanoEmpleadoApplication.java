@@ -43,20 +43,33 @@ public class Ejercicio9MapeoOneToOneCiudadanoEmpleadoApplication implements Comm
 		ciudadano1.setEmpleado(empleado1);
 		// si utilizo el cascade puedo agregar cualquiera
 		// de las 2 entidades y se habra guardado las 2
-		// Guardamos
-		this.empleadoService.agregar(empleado1);
+		// 1.Insertar Ciudadano y empleado
+		System.out.println("ingresando datos.....");
+//		this.empleadoService.agregar(empleado1);
+		System.out.println("datos ingresados correctamente!!");
 //		this.ciudadanoService.agregar(ciudadano1);
 		// 2.buscamos un ciudadano y un empleado
-		this.ciudadanoService.Buscar(3);// se busca por pk
+		System.out.println("buscando datos....");
+		// this.ciudadanoService.Buscar(3);// se busca por pk
+		System.out.println("datos encontrados exitosamente!!");
 		// imprimimos el ciudadano y el empleado(se modifico el toString)
-		System.out.println(ciudadano1);
-		System.out.println(empleado1);
+//		System.out.println(ciudadano1);
+//		System.out.println(empleado1);
 		// 3.Actualizamos un empleado y un ciudadano
-		empleado1.setCargo("Estudiante");
-		ciudadano1.setNombre("Jean Carl");
-		this.empleadoService.actualizar(empleado1);
-		// 4.Eliminar ciudadano
-		this.empleadoService.borrar(5);// se elimina por pk
+		System.out.println("Actualizando datos....");
+//		Ciudadano a = this.ciudadanoService.Buscar(1);
+//		a.setNombre("Andres");
+//		Empleado b = this.empleadoService.buscar(1);
+//		b.setCargo("Analista");
+//		this.empleadoService.buscar(1);
+//		this.ciudadanoService.actualizar(a);
+//		this.empleadoService.actualizar(b);
+		System.out.println("Datos actualizados correctamente!!");
+		// 4.Eliminar ciudadano y empleado
+		System.out.println("Eliminando datos...");
+		this.ciudadanoService.borrar(1);// se elimina por pk
+//		this.empleadoService.borrar(2);
+		System.out.println("Datos eliminados correctamente!!");
 
 	}
 
