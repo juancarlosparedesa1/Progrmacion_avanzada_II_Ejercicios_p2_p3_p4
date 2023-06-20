@@ -22,7 +22,7 @@ public class Habitacion {
 	private String numero;
 	private BigDecimal valor;
 
-	@ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne
 	@JoinColumn(name = "habit_id_hotel")
 	private Hotel hotel;
 

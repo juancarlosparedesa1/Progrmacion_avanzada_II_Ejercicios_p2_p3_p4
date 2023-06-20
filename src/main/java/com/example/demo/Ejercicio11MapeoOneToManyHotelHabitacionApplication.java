@@ -71,25 +71,27 @@ public class Ejercicio11MapeoOneToManyHotelHabitacionApplication implements Comm
 //		Ingresamos los hoteles a la bd
 //		Guardar hotel y habitacion
 		System.out.println("guardando datos en la bd.....");
-		this.hotelService.ingresar(hotel1);
-		this.hotelService.ingresar(hotel2);
+//		this.hotelService.ingresar(hotel1);
+//		this.hotelService.ingresar(hotel2);
+		System.out.println("datos guardados exitosamente!!");
 
 		// 2.Buscar hotel y habitacion
 		System.out.println("buscando datos de la bd.....");
-		this.hotelService.buscar(hotel1.getId());
-		this.habitacionService.buscar(habitacion1.getId());
-
-		// 3.Actualizar
+//		this.hotelService.buscar(1);
+//		this.habitacionService.buscar(2);
+		System.out.println("encontrados exitosamente!!");
+//
+//		// 3.Actualizar
 		System.out.println("Actualizando datos de la bd....");
 		hotel1.setDireccion("nueva direccion hotel1");
-		this.hotelService.actualizar(hotel1);
-		habitacion1.setValor(new BigDecimal(1000));
-		this.habitacionService.actualizar(habitacion1);
-
-		// 4.elimnar
+//		habitacion1.setValor(new BigDecimal(1000));
+//		this.hotelService.actualizar(hotel1);
+		System.out.println("Datos actualizados correctamente!!");
+//
+//		// 4.elimnar
 		System.out.println("eliminando datos de la bd.....");
-		this.hotelService.borrar(hotel2.getId());
-		this.habitacionService.borrar(habitacion3.getId());
+		this.hotelService.borrar(2);
+		
 		
 		//5.Reporte de hoteles y habitaciones
 		
@@ -97,7 +99,7 @@ public class Ejercicio11MapeoOneToManyHotelHabitacionApplication implements Comm
 		
 		// 5. Reporte de hoteles y habitaciones
 		// Consultar el hotel por ID e imprimir todas las habitaciones
-		Long hotelId = 1L; // ID del hotel que deseas buscar
+//		Long hotelId = 1L; // ID del hotel que deseas buscar
 
 //		// Buscar el hotel por ID
 //		Hotel hotel = hotelService.buscar(hotelId);
